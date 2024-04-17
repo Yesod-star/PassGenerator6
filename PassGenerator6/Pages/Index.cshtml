@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<h1>TITULO</h1>
+<div class="text-center">
+    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
+    <input type="number" id="passLength" min="1" value="12" />
+    <p id="passwordDisplay"></p>
+</div>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function generatePass() {
+            var passLength = $("#passLength").val();
+            $.ajax({
+                url: '@Url.Page(null, "GenerateRandomPassword")',
+                type: "GET",
+                data: { passLength: passLength },
+                success: function (password) {
+                    $("#passwordDisplay").text("Random Password: " + password);
+                }
+            });
+        };
+    </script>
+}
