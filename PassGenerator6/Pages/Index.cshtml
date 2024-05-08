@@ -7,16 +7,43 @@
 
 <h1>PASS GENERATOR6</h1>
 <h2>Maria Eduarda</h2>
-<div class="text-center">
+<h4>Dicas para senha: </h4>
+<ul>
+    <li>Use caracteres especiais e letras maiúsculas</li>
+    <li>Evite sequências numéricas e a sua data de nascimento</li>
+    <li>Varie o máximo que puder de uma senha para outra</li>
+</ul>
+<p>Agora você vai ver o nosso Software Gerador de senha:</p>
+<a href="https://prodest.es.gov.br/senhas">Link para caso queira testar a segurança de uma senha</a>
+<h4>Dicas senhas boas:</h4>
+<ul>
+    <li>kWW`9f{159yP</li>
+    <li>eyR315,4II7)</li>
+    <li>a3?9U39sJY_k</li>
+</ul>
+      <img src="https://cdn-dbjpo.nitrocdn.com/UnaGYVCpFqQwGLEbtWBgGehvxRPmUGzn/assets/static/optimized/rev-6d977ca/wp-content/uploads/elementor/thumbs/banner-blog-comocriarsenha-min-p8bk93i97fzc6zi0o45ws9y29nbqeo5g32sbdxy64o.png" style="max-width: 360px;">
+    <div class="text-center">
     <button id="generatePasswordBtn"class="button-51" onclick="generatePass()">Generate Random Password</button>
-    <input type="number" id="passLength" min="1" value="12" />
+    <input type="number" id="passLength" max="30" min="1" value="12" />
     <p id="passwordDisplay"></p>
 </div>
 
 <style>
+
+    a{
+        text-decoration:none;
+        color:blue;
+    }
+    a:hover{
+        font-weight:700;
+    }
     .text-center{
         line-break:revert-layer;
         word-break:break-all;
+    }
+
+    h1,h2,h3,h4{
+        font-weight: 600;
     }
 /* CSS */
 .button-51 {
@@ -62,7 +89,7 @@
   background-color: #6DCFF6;
 }
 
- media (min-width: 768px) {
+ media (min-width: 768px){
   .button-51 {
     padding: 16px 32px;
   }

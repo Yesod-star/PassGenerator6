@@ -7,7 +7,7 @@ namespace PassGenerator._3_Services
     {
         public string GenerateRandomPassword(int passLength)
         {
-            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*/";
             Random random = new Random();
             char[] password = new char[passLength];
             for (int j = 0; j < 5; j++)
