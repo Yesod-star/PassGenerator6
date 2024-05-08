@@ -7,26 +7,54 @@
 
 <h1>PASS GENERATOR6</h1>
 <h2>Giovanna Barroso</h2>
+<h4>Dicas para a senha:</h4>
+<ul>
+    <li>Dica 1:Evite reutilizar senhas</li>
+    <li>Dica 2:Não use palavras e números que tenham relação com você</li>
+    <li>Dica 3:Crie senhas longas, com no mínimo 10 caracteres</li>
+    <li>Dica 4:Use senhas com letras, números e caracteres</li>
+    <li>Dica 5:Não use combinações de teclas ou sequenciais</li>
+
+</ul>
+<h4>Exemplos de senha seguras:</h4>
+<ul>
+    <li>Senha 1:AS3nH2023</li>
+    <li>Senha 2:C0mpl3xP</li>
+    <li>Senha 3:RoxoCéu#987</li>
+</ul>
+<p>Agora você vai ver o nosso Software gerador de senha:</p>
+<a href="https://password.kaspersky.com/pt/">Link para testar a segurança da senha</a>
 <div class="text-center">
     <button id="generatePasswordBtn" class="button-51" onclick="generatePass()">Generate Random Password</button>
-    <input type="number" id="passLength" min="1" value="12" />
+    <input type="number" id="passLength" min="1" max="40" value="12" />
     <p id="passwordDisplay"></p>
 </div>
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfSDWwGnI05IEN02TEnJPCBSIGTKmswhDrA&usqp=CAU"
+    alt="Cadeado"
+    title="Cadeado"
+/>
+
 <style>
+    img{
+        width:360px;
+    }
+    body{
+        background-color: steelblue;
+    }
+
     .text-center{
         line-break:revert-layer;
         word-break:break-all;
-    }
-
-    body{
-        background-color: steelblue;
     }
 
     h1{
         font-size:80px;
         font-weight:600;
         color:darkblue;
+    }
+    h1,h2,h4{
+        font-weight: bold
     }
 
     .button-51 {
@@ -69,6 +97,15 @@
 
     .button-51:hover:before {
       background-color: #6DCFF6;
+    }
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    a:hover{
+        font-weight: 500;
+
     }
 </style>
 
