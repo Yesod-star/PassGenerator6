@@ -7,9 +7,25 @@
 
 <h1>GERADOR DE SENHA </h1>
 <h2>Gabriel de Jesus </h2>
+<h4>Dicas Para Senha:</h4>
+<ul>
+    <li>Dica 1: Tente Usar Senhas Maiores</li>
+    <li>Dica 2: Use Caracteres e Números</li>
+    <li>Dica 3: NãUse Senhas Comuns</li>
+</ul>
+<h4>Possiveis senhas:</h4>
+<ul>
+    <li>Gab093247</li>
+    <li>jo@o16879</li>
+    <li>p3dr@089h</li>
+    <li>black@N15</li>
+</ul>
+<img src="https://play-lh.googleusercontent.com/ahcqaJHAyk27V5zIfYEBanggGw1e3nQGjdpPYW81jTYOD3lctTK4mIsH7zxmzCfVeDnZ=w240-h480-rw" alt="Imagem" style="max-width: 360px;">
+<p>Agra Você Vai Ver Nosso Software Gerador De Senha:</p>
+<a href="https://password.kaspersky.com/pt/">Link Para Caso Queira Testar A Segurança De Uma Senha</a>
 <div class="text-center">
     <button id="generatePasswordBtn" class = "button-85" onclick="generatePass()">Generate Random Password</button>
-    <input type="number" id="passLength" min="1" value="12" />
+    <input type="number" id="passLength" min="1" max = "30" value="12" />
     <p id="passwordDisplay"></p>
 </div>
 
@@ -20,15 +36,39 @@
         word-break-all;
     }
 
-    body{
+    body
+    {
         background-color: dimgray;
     }
-    h1{
+    h1
+    {
         font-size: 30px;
         font-weight: 600;
         color:deepskyblue;
     }
-
+    h2
+    {
+        font-size: 30px;
+        font-weight: 600;
+        color: deeppink;
+    }
+    a
+    {
+        text-decoration: none;
+        color #000;
+    }
+    a:hover
+    {
+        font-weight:700;
+    }
+    h2
+    {
+        font:bold
+    }
+    h4
+    {
+        font:bold
+    }
 /* CSS */
 .button-85 {
   padding: 0.6em 2em;
