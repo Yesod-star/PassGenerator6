@@ -2,6 +2,6 @@
 {
     public interface IPasswordGenService
     {
-        string GenerateRandomPassword(int passLength);
+        List<string> GenerateRandomPasswords(int passLength, int numberOfPasswords);
     }
 }
