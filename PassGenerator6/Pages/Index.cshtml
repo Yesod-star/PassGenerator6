@@ -6,11 +6,73 @@
 
 
 <h1>PASS GENERATOR6</h1>
+<h2>Nayan de Oliveira Brito</h2>
 <div class="text-center">
-    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
+    <button id="generatePasswordBtn" class="button-21" onclick="generatePass()">Generate Random Password</button>
     <input type="number" id="passLength" min="1" value="12" />
     <p id="passwordDisplay"></p>
 </div>
+
+<style>
+    .text-center{
+        line-break: revert-layer;
+        word-break: break-all;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    h1{
+        font-size: 120px;
+        font-weight:  
+
+    }
+    .button-21 {
+      align-items: center;
+      appearance: none;
+      background-color: #3EB2FD;
+      background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+      background-size: calc(100% + 20px) calc(100% + 20px);
+      border-radius: 100px;
+      border-width: 0;
+      box-shadow: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: CircularStd,sans-serif;
+      font-size: 1rem;
+      height: auto;
+      justify-content: center;
+      line-height: 1.5;
+      padding: 6px 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .2s,background-position .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .button-21:active,
+    .button-21:focus {
+      outline: none;
+    }
+
+    .button-21:hover {
+      background-position: -20px -20px;
+    }
+
+    .button-21:focus:not(:active) {
+      box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+    }
+
+
+</style>
 
 
 @section Scripts {
