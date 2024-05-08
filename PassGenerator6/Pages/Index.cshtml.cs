@@ -21,8 +21,13 @@ namespace PassGenerator6.Pages
 
         public IActionResult OnGetGenerateRandomPassword(int passLength)
         {
-            string randomPassword = _passwordGenService.GenerateRandomPassword(passLength);
-            return Content(randomPassword);
+            List<string> randomPasswords = _passwordGenService.GenerateRandomPasswords(passLength, 5);
+
+            string passwordsAsString = string.Join(Environment.NewLine, randomPasswords);
+
+            return Content(passwordsAsString);
         }
+
+
     }
 }

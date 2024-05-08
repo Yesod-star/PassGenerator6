@@ -3,18 +3,33 @@ using System;
 
 namespace PassGenerator._3_Services
 {
+
+
     public class PasswordGenService : IPasswordGenService
     {
-        public string GenerateRandomPassword(int passLength)
-        {
-            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            Random random = new Random();
-            char[] password = new char[passLength];
-            for (int i = 0; i < passLength; i++)
+       
+        
+            public List<string> GenerateRandomPasswords(int passLength, int numberOfPasswords)
             {
-                password[i] = chars[random.Next(chars.Length)];
+                string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&ç.,*_-";
+                Random random = new Random();
+                List<string> passwords = new List<string>();
+
+                for (int j = 0; j < numberOfPasswords; j++)
+                {
+                    char[] password = new char[passLength];
+
+                    for (int i = 0; i < passLength; i++)
+                    {
+                        password[i] = chars[random.Next(chars.Length)];
+                    }
+
+                    passwords.Add(new string(password));
+                }
+
+                return passwords;
             }
-            return new string(password);
+
+
         }
-    }
 }
