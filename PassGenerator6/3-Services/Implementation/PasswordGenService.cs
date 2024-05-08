@@ -23,7 +23,11 @@ namespace PassGenerator._3_Services
                 password5[i] = chars[random.Next(chars.Length)];
 
             }
-            return new string(password) + "-" + new string(password2) + "-" + new string(password3) + "-" + new string(password4) + "-" + new string(password5);
+            return new string(password) + "-"
+                + new string(password2) + "-"
+                + new string(password3) + "-"
+                + new string(password4) + "-"
+                + new string(password5);
         }
     }
 }
