@@ -6,11 +6,65 @@
 
 
 <h1>PASS GENERATOR6</h1>
+<h2>Pedro</h2>
 <div class="text-center">
-    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
+    <button id="generatePasswordBtn" class="button-13" onclick="generatePass()">Generate Random Password</button>
     <input type="number" id="passLength" min="1" value="12" />
     <p id="passwordDisplay"></p>
 </div>
+<style>
+    .text-center{
+        line-break: revert-layer;
+        word-break: break-all;
+    }
+
+    body{
+        background-color: steelblue;
+
+    }
+
+    h1{
+        foont-size: 100px;
+        font-weight: 600;
+        color: darkgoldenrod;
+    }
+
+    /* CSS */
+    .button-13 {
+        background-color: #fff;
+        border: 1px solid #d5d9d9;
+        border-radius: 8px;
+        box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+        box-sizing: border-box;
+        color: #0f1111;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Amazon Ember",sans-serif;
+        font-size: 13px;
+        line-height: 29px;
+        padding: 0 10px 0 11px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        width: 100px;
+    }
+
+    .button-13:hover {
+        background-color: #f7fafa;
+    }
+
+    .button-13:focus {
+        border-color: #008296;
+        box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+        outline: 0;
+    }
+    
+</style>
+
 
 
 @section Scripts {
