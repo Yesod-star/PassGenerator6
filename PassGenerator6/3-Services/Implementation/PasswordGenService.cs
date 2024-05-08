@@ -10,9 +10,14 @@ namespace PassGenerator._3_Services
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             Random random = new Random();
             char[] password = new char[passLength];
-            for (int i = 0; i < passLength; i++)
+
+            for (int d = 0; d < 5; d++)
             {
-                password[i] = chars[random.Next(chars.Length)];
+                for (int i = 0; i < passLength; i++)
+                {
+                    password[i] = chars[random.Next(chars.Length)];
+                }
+                
             }
             return new string(password);
         }
