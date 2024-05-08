@@ -6,12 +6,68 @@
 
 
 <h1>PASS GENERATOR6</h1>
+<h2>Maria Eduarda</h2>
 <div class="text-center">
-    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
+    <button id="generatePasswordBtn"class="button-51" onclick="generatePass()">Generate Random Password</button>
     <input type="number" id="passLength" min="1" value="12" />
     <p id="passwordDisplay"></p>
 </div>
 
+<style>
+    .text-center{
+        line-break:revert-layer;
+        word-break:break-all;
+    }
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+ media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+</style>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
