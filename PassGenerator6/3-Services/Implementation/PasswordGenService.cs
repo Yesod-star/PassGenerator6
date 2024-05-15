@@ -14,6 +14,7 @@ namespace PassGenerator._3_Services
             {
                 password[i] = chars[random.Next(chars.Length)];
             }
+
             return new string(password);
         }
     }
