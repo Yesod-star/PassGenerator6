@@ -5,12 +5,92 @@
 }
 
 
-<h1>PASS GENERATOR6</h1>
+<h1>PASS GENERATOR 6</h1>
+<p>Data Ultima Atualizacao:15/05/2024</p>
+<h4>Dicas para a senha:</h4>
+<ul>
+    <li>Use caracteres especiais e letras maiúsculas:</li>
+    <li>Evite sequências numéricas e a sua data de nascimento:</li>
+    <li>Instalar a identificação por biometria ou Face ID:</li>
+    <li>Fugir de senhas parecidas:</li>
+    <li>Usar autenticação de dois fatores:</li>
+
+</ul>
+
+<h4>EXEMPLOS de senhas boas:</h4>
+<ul>
+    <li>$3guR4nÇaRe41:</li>
+    <li>SeNh@Pr0T&gyD4!:</li>
+    <li>B!cyCl3tA$dIMoNtanH4:</li> 
+</ul>
+
+<img src="https://www.hostgator.com.br/assets/images/password-generator/feature-description/feature-description-1.svg"
+ alt="senhas"
+ title="senhas"
+/>
+
+
+<p>Agora você vai ver o nosso Software gerador de senha:</p>
+<a href="https://password.kaspersky.com/pt/">Link para caso queira testar a segurança de uma senha</a>
 <div class="text-center">
-    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
-    <input type="number" id="passLength" min="1" value="12" />
+    <button id="generatePasswordBtn" class="button-12" onclick="generatePass()">Generate Random Password</button>
+    <input type="number" id="passLength" min="1" max="20" value="12" />
     <p id="passwordDisplay"></p>
 </div>
+
+<style>
+    .bold{
+        font-weight:bold;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover{
+        font-weight:700;
+    }
+    img{
+        width: 360px;
+    }
+
+    .text-center{
+        line-break: revert-layer;
+        word-break: break-all;
+    }
+    body{
+        background-color:steelblue;
+    }
+    h1{
+        font-size:50px;
+        font-weight:200;
+        color:darkblue;
+    }
+
+    /* CSS */
+
+    .button-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 14px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        border-radius: 6px;
+        border: none;
+        background: #6E6D70;
+        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+        color: #DFDEDF;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+        .button-12:focus {
+            box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+            outline: 0;
+        }
+
+
+</style>
 
 
 @section Scripts {
