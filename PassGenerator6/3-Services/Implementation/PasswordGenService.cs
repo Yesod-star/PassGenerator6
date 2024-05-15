@@ -7,14 +7,21 @@ namespace PassGenerator._3_Services
     {
         public string GenerateRandomPassword(int passLength)
         {
-            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*";
             Random random = new Random();
-            char[] password = new char[passLength];
-            for (int i = 0; i < passLength; i++)
+            string passwords = "";
+            for (int j = 0; j < 5; j++) 
             {
-                password[i] = chars[random.Next(chars.Length)];
+                char[] password = new char[passLength];
+                for (int i = 0; i < passLength; i++)
+                {
+                    password[i] = chars[random.Next(chars.Length)];
+                }
+                passwords += new string(password) + "-"; 
             }
-            return new string(password);
+            
+            passwords = passwords.Remove(passwords.Length - 1);
+            return passwords;
         }
     }
 }
