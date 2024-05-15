@@ -4,16 +4,44 @@
     ViewData["Title"] = "Home page";
 }
 
+<p>Data Nascimento 17/06/2006</p>
+<a href="https://g1.globo.com/">Clique aqui para ir em um site do G1</a>
 
-<h1>PASS GENERATOR6</h1>
-<p>Data Ultima Atualização: 15/05/2024</p>
-<div class="text-center">
-    <button id="generatePasswordBtn" onclick="generatePass()">Generate Random Password</button>
-    <input type="number" id="passLength" min="1" value="12" />
-    <p id="passwordDisplay"></p>
+<style>
 
-</div>
+   a {
+        text-decoration: none;
+        color: white;
+    }
 
+    p {
+        font-weight: bold;
+        font-size: 40px;
+        font-weight: 600;
+        color: black;
+    }
+
+    a:hover {
+        font-weight: 700;
+    }
+
+    .text-center {
+        line-break: revert-layer;
+        word-break: break-all;
+    }
+
+    body {
+        background-color: red;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+
+</style>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -30,4 +58,6 @@
             });
         };
     </script>
+
+
 }
